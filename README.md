@@ -16,6 +16,8 @@ popularly known as NS-2.
 
 <h3>Standard Algorithm</h3>
 
+![Standrad algorithm graph](Standard algo.png)
+
 Cwnd = Number of packets sent at a time.
 
 1.	Cwnd window opens (extends) at every acknowledgement by receiver.
@@ -25,6 +27,8 @@ Cwnd = Number of packets sent at a time.
 
 
 <h3> Improved Algorithm </h3>
+
+![Improved algorithm graph](Improved algo.png)
 
 1. When packets are dropped there will be presence of duplicate acknowledgements. Thus slowdown () will be called. 
 2. At that time current cwnd's value will be stored in variable and cwnd will be given new value which will be current cwnd divided by number of tcp traffic sources. 
