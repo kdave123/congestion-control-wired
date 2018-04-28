@@ -11,12 +11,14 @@ The Repository includes
 1. <b>improved tcp.h</b> and <b>tcp.cc</b> implemented by Network Simulator 2
 popularly known as NS-2.
 2.TCL file with two TCP generator nodes and one receiver with one intermidiate node.
+![Two generators TCL](tcl.png)
+
 3. Standard Results - Includes .xg (graph),  .awk files for analyzing efficiency, packet drops, etc, Trace files.
 4. Improved Results - Includes Graphs, awk files, trace files
 
 <h3>Standard Algorithm</h3>
 
-![Standrad algorithm graph](Standard algo.png)
+![Standrad algorithm graph](Standard.png)
 
 Cwnd = Number of packets sent at a time.
 
@@ -28,7 +30,7 @@ Cwnd = Number of packets sent at a time.
 
 <h3> Improved Algorithm </h3>
 
-![Improved algorithm graph](Improved algo.png)
+![Improved algorithm graph](Improved.png)
 
 1. When packets are dropped there will be presence of duplicate acknowledgements. Thus slowdown () will be called. 
 2. At that time current cwnd's value will be stored in variable and cwnd will be given new value which will be current cwnd divided by number of tcp traffic sources. 
