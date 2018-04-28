@@ -14,7 +14,8 @@ popularly known as NS-2.
 3. Standard Results - Includes .xg (graph),  .awk files for analyzing efficiency, packet drops, etc, Trace files.
 4. Improved Results - Includes Graphs, awk files, trace files
 
-Standard Algorithm
+<h3>Standard Algorithm</h3>
+
 Cwnd = Number of packets sent at a time.
 
 1.	Cwnd window opens (extends) at every acknowledgement by receiver.
@@ -23,7 +24,7 @@ Cwnd = Number of packets sent at a time.
 4.  In Standard Algorithm Slowdown Resets cwnd window and increased slowly again when acknowledgements are received and will reset again if packets are lost.
 
 
-Improved ALgorithm
+<h3> Improved Algorithm </h3>
 
 1. When packets are dropped there will be presence of duplicate acknowledgements. Thus slowdown () will be called. 
 2. At that time current cwnd's value will be stored in variable and cwnd will be given new value which will be current cwnd divided by number of tcp traffic sources. 
@@ -36,6 +37,6 @@ Example
 4. 10+10=20 AND QUEUE is only for 10 which will result in packet drop.
 5.Now, set  cwnd=cwnd/N     cwnd is current cwnd window value AND N is the number of tcp traffic generators
 i.e.  cwnd=10/2 which is 5.
-5. Both sources will send 5 packets (5+5=10 Total) queue is 10 so no packet loss with optimum packets transfer.
-6. Now this will not get incremented again since it is already transmitting as fast as possible without losing packets anymore.
+6. Both sources will send 5 packets (5+5=10 Total) queue is 10 so no packet loss with optimum packets transfer.
+7. Now this will not get incremented again since it is already transmitting as fast as possible without losing packets anymore.
 
