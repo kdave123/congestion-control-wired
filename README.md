@@ -26,7 +26,7 @@ Cwnd = Number of packets sent at a time.
 1.	Cwnd window opens (extends) at every acknowledgement by receiver.
 2.	It calls opencwnd() function which increments number of packets that will be sent at a time (cwnd) once it reaches threshold (ssthresh) TCP will enter congestion avoidance state and then slowing down starts. 
 3.	When packets will get lost (Because of Congestion, Queues full, bottleneck) there will be presence of duplicate acknowledgements. Thus slowdown () will be called. 
-4.  In Standard Algorithm Slowdown Resets cwnd window and increased slowly again when acknowledgements are received and will reset again if packets are lost.
+4.  In Standard Algorithm Slowdown Resets cwnd window and increased slowly again when acknowledgements are received and it will reset again if packets are lost.
 
 
 <h3> Improved Algorithm </h3>
